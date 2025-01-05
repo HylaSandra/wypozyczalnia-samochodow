@@ -9,6 +9,10 @@ Funkcjonalności aplikacji:
 - Dodanie/usunięcie samochodu
 
 Struktura bazy danych:
+
+Tabela Klient: 
+Id, Imie,Nazwisko, Nazwa, PESEL, NIP, NrTelefonu, DowodOsobisty 
+
 - Samochod: Id, marka, model, rok, moc, ile osob, typ, czy usunięty, udogodnienia*
 - Klient: Id, Imie, Nazwisko, Nazwa, PESEL, NIP, NrTelefonu, DowodOsobisty
 - Wypozyczenie: Id, IdKlient, IdSamochod, DataOd, DataDo, Ilosc, TypIlosci, Stawka, Kwota
