@@ -1,5 +1,6 @@
 # Aplikacja wypożyczalni samochodów
 
+Autorzy: Karolina Ciszowska, Daniel Jurczyk, Sandra Hyla
 Aplikacja wypożyczalni samochodów od strony firmy wypożyczającej.
 
 Funkcjonalności aplikacji: 
