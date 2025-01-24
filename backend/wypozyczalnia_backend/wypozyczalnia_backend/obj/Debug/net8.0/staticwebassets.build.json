@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "v4/RRiIkWRunLOuYyjRfuSbUEN0yvid8DM673acNOmk=",
+  "Hash": "HWlWzmBMkco9Ho/ctkXAYc222j5W9A5CWLnMsNV6gnc=",
   "Source": "wypozyczalnia_backend",
   "BasePath": "_content/wypozyczalnia_backend",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

@@ -5,19 +5,84 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:wpf_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-    <Grid>
-        <!-- Nagłówek -->
-        <TextBlock Text="Wybierz opcję" FontSize="36" FontWeight="Bold" 
-                   HorizontalAlignment="Left" VerticalAlignment="Top" Margin="278,52,0,0" Foreground="#FFE43535" Height="91" Width="346" />
+        Title="MainWindow" Height="400" Width="600"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
+    
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="SecondaryColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="PrimaryLightColor" Color="#F2EBDC"/>
+        <SolidColorBrush x:Key="SecondaryDarkColor" Color="#012E40"/>
 
-        <!-- Przyciski -->
-        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Vertical" Margin="0,148,0,0">
-            <Button Content="Samochody" Width="200" Height="50" Click="SamochodyButton_Click" />
-            <Button Content="Wypożyczenia" Width="200" Height="50" Click="WypozyczeniaButton_Click" />
-            <Button Content="Klienci" Width="200" Height="50" Click="KlienciButton_Click" />
+        <SolidColorBrush x:Key="ButtonMouseOverColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="TextMouseOverColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="ButtonPressedColor" Color="#012E40"/>
+
+        <!-- Styl przycisków -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="BorderThickness" Value="2.7,2.7,2.7,2.7"/> 
+            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="200"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="18"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="btnBorder"
+                                Background="{TemplateBinding Background}"
+                                Width="{TemplateBinding Width}"
+                                MaxHeight="{TemplateBinding MaxHeight}"
+                                BorderThickness="{TemplateBinding BorderThickness}"
+                                BorderBrush="{TemplateBinding BorderBrush}"
+                                SnapsToDevicePixels="True"
+                                Padding="{TemplateBinding Padding}">
+                            <ContentPresenter x:Name="ContentPresenter" Focusable="False"
+                                              HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                              VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                              Margin="{TemplateBinding Padding}"
+                                              SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                              RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonMouseOverColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource TextMouseOverColor}"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonPressedColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+                                <Setter Property="BorderThickness" Value="2.7,2.7,2.7,2.7"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <Grid Background="#D9D2C5">
+
+        <!-- Przycisk do zamykania okna -->
+        <Button Content="X" Click="ZamknijOkno_Click" Style="{DynamicResource PrimaryButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="30" Margin="0,10,10,0"/>
+
+        <!-- Nagłówek -->
+        <TextBlock Text="WYPOŻYCZALNIA SAMOCHODÓW" Foreground="#FF4D6C73" Margin="0,0,0,250" FontFamily="Cascadia Code" FontSize="18" VerticalAlignment="Center" HorizontalAlignment="Center" />
+
+        <!-- Formularz zarządzania klientem -->
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Top" Orientation="Vertical" Margin="0,150,0,0">
+            <Button Content="SAMOCHODY" Style="{DynamicResource PrimaryButtonStyle}" Click="SamochodyButton_Click" Margin="0,0,-1,10"/>
+            <Button Content="KLIENCI" Style="{DynamicResource PrimaryButtonStyle}" Click="KlienciButton_Click" Margin="0,0,0,10"/>
+            <Button Content="WYPOŻYCZENIA" Style="{DynamicResource PrimaryButtonStyle}" Click="WypozyczeniaButton_Click"/>
         </StackPanel>
     </Grid>
-    </ScrollViewer>
+    
 </Window>

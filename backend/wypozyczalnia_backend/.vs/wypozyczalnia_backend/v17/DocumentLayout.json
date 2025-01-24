@@ -1,9 +1,9 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\",
+  "WorkspaceRootPath": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{D4A3BCBC-217F-4BBA-A18F-5D980C16EFEE}|wypozyczalnia_backend\\wypozyczalnia_backend.csproj|d:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4A3BCBC-217F-4BBA-A18F-5D980C16EFEE}|wypozyczalnia_backend\\wypozyczalnia_backend.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4A3BCBC-217F-4BBA-A18F-5D980C16EFEE}|wypozyczalnia_backend\\wypozyczalnia_backend.csproj|solutionrelative:wypozyczalnia_backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -14,24 +14,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
               "Title": "AuthController.cs",
-              "DocumentMoniker": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Controllers\\AuthController.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "wypozyczalnia_backend\\Controllers\\AuthController.cs",
-              "ToolTip": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Controllers\\AuthController.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Controllers\\AuthController.cs",
               "RelativeToolTip": "wypozyczalnia_backend\\Controllers\\AuthController.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAB4AAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-15T16:55:24.456Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

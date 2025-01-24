@@ -45,7 +45,7 @@ public partial class KlienciWindow : Window
             return;
         }
 
-        long pesel = 0; // Domyślna wartość PESEL
+        long pesel = 0; // Domyślna wartość numeru PESEL
         if (string.IsNullOrWhiteSpace(PESELTextBox.Text))
         {
             MessageBox.Show("PESEL nie może być pusty. Ustawiono wartość domyślną: 0.");
@@ -80,7 +80,7 @@ public partial class KlienciWindow : Window
     }
 
 
-
+    // Edycja klienta
     private async void EdytujKlienta_Click(object sender, RoutedEventArgs e)
     {
         if (KlienciListView.SelectedItem is not Klient wybranyKlient)
@@ -134,9 +134,6 @@ public partial class KlienciWindow : Window
         }
     }
 
-
-    
-
     // Usunięcie klienta
     private async void UsunKlienta_Click(object sender, RoutedEventArgs e)
     {
@@ -163,4 +160,17 @@ public partial class KlienciWindow : Window
     {
         return long.TryParse(peselText, out var pesel) ? pesel : null;
     }
+
+    private void PESELTextBox_TextChanged()
+    {
+
+    }
+
+    // Zamknięcie okna
+    private void ZamknijOkno_Click(object sender, RoutedEventArgs e)
+    {
+        this.Close();
+    }
 }
+
+

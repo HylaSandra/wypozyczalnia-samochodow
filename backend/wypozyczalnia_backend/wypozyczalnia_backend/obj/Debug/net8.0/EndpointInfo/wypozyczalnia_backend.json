@@ -1,0 +1,863 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Wypozyczalnia API",
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Auth/login": {
+      "post": {
+        "tags": [
+          "Auth"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Dto.LoginDto"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Dto.LoginDto"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Dto.LoginDto"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Klient": {
+      "get": {
+        "tags": [
+          "Klient"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Klient"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Klient/{id}": {
+      "get": {
+        "tags": [
+          "Klient"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Klient"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Klient"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Samochod": {
+      "get": {
+        "tags": [
+          "Samochod"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Samochod"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Samochod/{id}": {
+      "get": {
+        "tags": [
+          "Samochod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Samochod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Samochod"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Slownik": {
+      "get": {
+        "tags": [
+          "Slownik"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Slownik"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Slownik/{id}": {
+      "get": {
+        "tags": [
+          "Slownik"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Slownik"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Slownik"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Slownik"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Uzytkownik": {
+      "get": {
+        "tags": [
+          "Uzytkownik"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Uzytkownik"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Uzytkownik/{login}": {
+      "get": {
+        "tags": [
+          "Uzytkownik"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Uzytkownik"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Uzytkownik"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Uzytkownik"
+        ],
+        "parameters": [
+          {
+            "name": "login",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Wypozyczenie": {
+      "get": {
+        "tags": [
+          "Wypozyczenie"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Wypozyczenie"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Wypozyczenie/{id}": {
+      "get": {
+        "tags": [
+          "Wypozyczenie"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Wypozyczenie"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/wpf_app.Wypozyczenie"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Wypozyczenie"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "wpf_app.Wypozyczenie": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idKlient": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "klient": {
+            "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Klient"
+          },
+          "idSamochod": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "samochod": {
+            "$ref": "#/components/schemas/wypozyczalnia_backend.Models.Samochod"
+          },
+          "dataOd": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "dataDo": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "ilosc": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typIlosci": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "stawka": {
+            "type": "number",
+            "format": "double"
+          },
+          "kwota": {
+            "type": "number",
+            "format": "double"
+          }
+        },
+        "additionalProperties": false
+      },
+      "wypozyczalnia_backend.Dto.LoginDto": {
+        "type": "object",
+        "properties": {
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "haslo": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "wypozyczalnia_backend.Models.Klient": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "imie": {
+            "type": "string",
+            "nullable": true
+          },
+          "nazwisko": {
+            "type": "string",
+            "nullable": true
+          },
+          "nazwa": {
+            "type": "string",
+            "nullable": true
+          },
+          "pesel": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "nip": {
+            "type": "integer",
+            "format": "int64",
+            "nullable": true
+          },
+          "nrTelefonu": {
+            "type": "string",
+            "nullable": true
+          },
+          "dowodOsobisty": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "wypozyczalnia_backend.Models.Samochod": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "marka": {
+            "type": "string",
+            "nullable": true
+          },
+          "model": {
+            "type": "string",
+            "nullable": true
+          },
+          "paliwo": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "mocKm": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "rokProdukcji": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "iloscOsob": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "typ": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "klimatyzacja": {
+            "type": "boolean"
+          },
+          "nawigacja": {
+            "type": "boolean"
+          },
+          "czujnikiParowania": {
+            "type": "boolean"
+          },
+          "czyDostepny": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "wypozyczalnia_backend.Models.Slownik": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "wartosc": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "wypozyczalnia_backend.Models.Uzytkownik": {
+        "type": "object",
+        "properties": {
+          "login": {
+            "type": "string",
+            "nullable": true
+          },
+          "haslo": {
+            "type": "string",
+            "nullable": true
+          },
+          "rola": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "apiKey",
+        "description": "Wprowadź token w formacie: Bearer {token}",
+        "name": "Authorization",
+        "in": "header"
+      }
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

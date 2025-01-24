@@ -1,161 +1,280 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\wypozyczalnia\\wpf_app\\",
+  "WorkspaceRootPath": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\klienciwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klienciwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\klienciwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klienciwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\wpf_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\wypozyczeniawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\wypozyczeniawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\samochodywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\samochodywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\samochodywindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\klienciwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klienciwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\wypozyczeniawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\wypozyczeniawindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\samochodywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\samochodywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\klienciwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klienciwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\wypozyczeniawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\wypozyczeniawindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\booltoyesnoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\booltoyesnoconverter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\apiclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|d:\\wypozyczalnia\\wpf_app\\wpf_app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\BaseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\Klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\wpf_app.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|c:\\users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{325707BC-BC56-45D3-82CB-52CAE6CFA094}|wpf_app\\wpf_app.csproj|solutionrelative:wpf_app\\klient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
     {
-      "Orientation": 0,
+      "Orientation": 1,
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "DockedHeight": 364,
+          "SelectedChildIndex": 3,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "App.xaml",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml",
+              "RelativeDocumentMoniker": "wpf_app\\App.xaml",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml",
+              "RelativeToolTip": "wpf_app\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-10T10:47:09.37Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "wpf_app\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml",
+              "RelativeToolTip": "wpf_app\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-10T10:01:48.537Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KlienciWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml",
+              "RelativeDocumentMoniker": "wpf_app\\KlienciWindow.xaml",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml",
+              "RelativeToolTip": "wpf_app\\KlienciWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-10T10:49:12.026Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SamochodyWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml",
+              "RelativeDocumentMoniker": "wpf_app\\SamochodyWindow.xaml",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml",
+              "RelativeToolTip": "wpf_app\\SamochodyWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-10T10:48:21.239Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "WypozyczeniaWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml",
+              "RelativeDocumentMoniker": "wpf_app\\WypozyczeniaWindow.xaml",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml",
+              "RelativeToolTip": "wpf_app\\WypozyczeniaWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-01-10T10:48:53.726Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KlienciWindow.xaml.cs",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml.cs",
-              "RelativeDocumentMoniker": "wpf_app\\KlienciWindow.xaml.cs",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml.cs",
-              "RelativeToolTip": "wpf_app\\KlienciWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Window.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs[Tylko do odczytu]",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\50ab7bdae9243e5122ba9edb32871e43129da7d00db627fba3fc17e8a1e08277\\Window.cs[Tylko do odczytu]",
+              "ViewState": "AgIAAMoQAAAAAAAAAAAUwNEQAAAZAAAAAQAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:49:45.137Z"
+              "WhenOpened": "2025-01-23T16:07:32.671Z",
+              "EditorCaption": "[Tylko do odczytu]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KlienciWindow.xaml",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml",
-              "RelativeDocumentMoniker": "wpf_app\\KlienciWindow.xaml",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml",
-              "RelativeToolTip": "wpf_app\\KlienciWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-10T10:49:12.026Z"
+              "DocumentIndex": 7,
+              "Title": "KlienciWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml.cs",
+              "RelativeDocumentMoniker": "wpf_app\\KlienciWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\KlienciWindow.xaml.cs",
+              "RelativeToolTip": "wpf_app\\KlienciWindow.xaml.cs",
+              "ViewState": "AgIAAJEAAAAAAAAAAAAcwKkAAABEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T15:23:48.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainWindow.xaml",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml",
-              "RelativeDocumentMoniker": "wpf_app\\MainWindow.xaml",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml",
-              "RelativeToolTip": "wpf_app\\MainWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-10T10:01:48.537Z"
+              "DocumentIndex": 5,
+              "Title": "SamochodyWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml.cs",
+              "RelativeDocumentMoniker": "wpf_app\\SamochodyWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml.cs",
+              "RelativeToolTip": "wpf_app\\SamochodyWindow.xaml.cs",
+              "ViewState": "AgIAAFAAAAAAAAAAAAAIwHIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T14:20:06.27Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "wpf_app\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\MainWindow.xaml.cs",
               "RelativeToolTip": "wpf_app\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAVAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAUwBgAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-10T10:06:32.759Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "WypozyczeniaWindow.xaml",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml",
-              "RelativeDocumentMoniker": "wpf_app\\WypozyczeniaWindow.xaml",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml",
-              "RelativeToolTip": "wpf_app\\WypozyczeniaWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-10T10:48:53.726Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "wpf_app.csproj",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj",
-              "RelativeDocumentMoniker": "wpf_app\\wpf_app.csproj",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj",
-              "RelativeToolTip": "wpf_app\\wpf_app.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-10T10:14:40.76Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "SamochodyWindow.xaml",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml",
-              "RelativeDocumentMoniker": "wpf_app\\SamochodyWindow.xaml",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\SamochodyWindow.xaml",
-              "RelativeToolTip": "wpf_app\\SamochodyWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-10T10:48:21.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Klient.cs",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\Klient.cs",
-              "RelativeDocumentMoniker": "wpf_app\\Klient.cs",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\Klient.cs",
-              "RelativeToolTip": "wpf_app\\Klient.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-10T10:39:11.616Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "WypozyczeniaWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml.cs",
+              "RelativeDocumentMoniker": "wpf_app\\WypozyczeniaWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\WypozyczeniaWindow.xaml.cs",
+              "RelativeToolTip": "wpf_app\\WypozyczeniaWindow.xaml.cs",
+              "ViewState": "AgIAAEIAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T15:37:17.005Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "BoolToYesNoConverter.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\BoolToYesNoConverter.cs",
+              "RelativeDocumentMoniker": "wpf_app\\BoolToYesNoConverter.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\BoolToYesNoConverter.cs",
+              "RelativeToolTip": "wpf_app\\BoolToYesNoConverter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-22T12:44:25.652Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml.cs",
+              "RelativeDocumentMoniker": "wpf_app\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml.cs",
+              "RelativeToolTip": "wpf_app\\App.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T16:39:11.303Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "RelativeToolTip": "..\\..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\0a84cc53936b314ba955b54f50bf4796d8234943f3fd7b93873381b45d404026\\XamlReader.cs",
+              "ViewState": "AgIAAKIBAAAAAAAAAAAUwLUBAAAmAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T15:36:09.536Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\BaseModel.cs",
+              "RelativeDocumentMoniker": "..\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\BaseModel.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\BaseModel.cs",
+              "RelativeToolTip": "..\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\BaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T17:01:42.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "ApiClient.cs",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\ApiClient.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\ApiClient.cs",
               "RelativeDocumentMoniker": "wpf_app\\ApiClient.cs",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\ApiClient.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\ApiClient.cs",
               "RelativeToolTip": "wpf_app\\ApiClient.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -163,14 +282,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml",
-              "RelativeDocumentMoniker": "wpf_app\\App.xaml",
-              "ToolTip": "D:\\wypozyczalnia\\wpf_app\\wpf_app\\App.xaml",
-              "RelativeToolTip": "wpf_app\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-10T10:47:09.37Z"
+              "DocumentIndex": 15,
+              "Title": "Klient.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\Klient.cs",
+              "RelativeDocumentMoniker": "..\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\Klient.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\Klient.cs",
+              "RelativeToolTip": "..\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\Models\\Klient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T17:02:20.541Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "wpf_app.csproj",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\Source\\Repos\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj",
+              "RelativeDocumentMoniker": "wpf_app\\wpf_app.csproj",
+              "ToolTip": "C:\\Users\\zgrywek\\Source\\Repos\\wypozyczalnia\\wpf_app\\wpf_app\\wpf_app.csproj",
+              "RelativeToolTip": "wpf_app\\wpf_app.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-01-10T10:14:40.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Klient.cs",
+              "DocumentMoniker": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\Klient.cs",
+              "RelativeDocumentMoniker": "wpf_app\\Klient.cs",
+              "ToolTip": "C:\\Users\\zgrywek\\source\\repos\\wypozyczalnia\\wpf_app\\wpf_app\\Klient.cs",
+              "RelativeToolTip": "wpf_app\\Klient.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-10T10:39:11.616Z"
             }
           ]
         }

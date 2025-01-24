@@ -2,69 +2,181 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:global="clr-namespace:"
-        Title="Zarządzanie Samochodami" Height="450" Width="800">
+        Title="Zarządzanie Samochodami" Height="1000" Width="900"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
     
-    <!-- Zasoby dla okna -->
     <Window.Resources>
         <global:BoolToYesNoConverter x:Key="BoolToYesNoConverter" />
-    </Window.Resources>
-    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto">
-        <Grid>
-            <StackPanel Margin="10">
-                <TextBlock Text="Dodaj Samochód" FontWeight="Bold" FontSize="16" Margin="0,0,0,10" HorizontalAlignment="Center"/>
+        <SolidColorBrush x:Key="PrimaryColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="SecondaryColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="PrimaryLightColor" Color="#F2EBDC"/>
+        <SolidColorBrush x:Key="SecondaryDarkColor" Color="#012E40"/>
 
-                <!-- Dodane pole Typ -->
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Typ:"/>
-                    <TextBox x:Name="TypTextBox" />
-                </StackPanel>
+        <SolidColorBrush x:Key="ButtonMouseOverColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="TextMouseOverColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="ButtonPressedColor" Color="#012E40"/>
+
+        <!-- Styl bloków tekstowych -->
+        <Style x:Key="TextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryLightColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryDarkColor}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
+
+        <!-- Styl nagłówków tabeli -->
+        <Style x:Key="TextBlock" TargetType="{x:Type TextBlock}">
+            <Setter Property="Background" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="TextAlignment" Value="Center"/>
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Width" Value="100"/>
+        </Style>
+
+        <!-- Styl tabeli wyboru -->
+        <Style x:Key="ComboBox" TargetType="{x:Type ComboBox}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryDarkColor}"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="BorderThickness" Value="0"/>
+        </Style>
+
+        <!-- Styl pól wyboru -->
+        <Style x:Key="CheckBox" TargetType="{x:Type CheckBox}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryLightColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Margin" Value="5,10,0,0"/>
+        </Style>
+
+        <!-- Styl przycisków -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="BorderThickness" Value="2.7,2.7,2.7,2.7"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Template">
+                <Setter.Value> 
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="btnBorder"
+                    Background="{TemplateBinding Background}"
+                    Width="{TemplateBinding Width}"
+                    MaxHeight="{TemplateBinding MaxHeight}"
+                    BorderThickness="{TemplateBinding BorderThickness}"
+                    BorderBrush="{TemplateBinding BorderBrush}"
+                    SnapsToDevicePixels="True"
+                    Padding="{TemplateBinding Padding}">
+                            <ContentPresenter x:Name="ContentPresenter" Focusable="False"
+                                  HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                  VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                  Margin="{TemplateBinding Padding}"
+                                  SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                  RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonMouseOverColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource TextMouseOverColor}"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonPressedColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+
+    <!-- Pasek przewijania -->
+    <ScrollViewer HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Hidden">
+        <Grid Background="#FFD9D2C5">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="31*"/>
+                <RowDefinition Height="35*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Vertical" Margin="10,10,10,35" Background="#FFD9D2C5" Grid.RowSpan="2">
+
+                <!-- Przycisk do zamykania okna -->
+                <Button Content="X" Click="ZamknijOkno_Click" Style="{DynamicResource PrimaryButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="30" Margin="0,5,5,0"/>
+
+                <!-- Nagłówek -->
+                <TextBlock Text="SAMOCHODY" Foreground="#FF4D6C73" Margin="0,10,0,20" FontFamily="Cascadia Code" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
                 <!-- Formularz dodawania samochodu -->
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Marka:"/>
-                    <TextBox x:Name="MarkaTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="TYP:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="TypTextBox" Style="{DynamicResource TextBox}"/>
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Model:"/>
-                    <TextBox x:Name="ModelTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="MARKA:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="MarkaTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Paliwo:"/>
-                    <TextBox x:Name="PaliwoTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="MODEL:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="ModelTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Rok Produkcji:"/>
-                    <TextBox x:Name="RokProdukcjiTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="PALIWO:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="PaliwoTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Moc w KM:"/>
-                    <TextBox x:Name="MocKmTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="ROK PRODUKCJI:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="RokProdukcjiTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
-                <StackPanel Orientation="Vertical" Margin="0,5">
-                    <TextBlock Text="Ilość Osób:"/>
-                    <TextBox x:Name="IloscOsobTextBox" />
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="MOC W KM:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="MocKmTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
-                <CheckBox x:Name="KlimatyzacjaCheckBox" Content="Klimatyzacja" Margin="0,5"/>
-                <CheckBox x:Name="NawigacjaCheckBox" Content="Nawigacja" Margin="0,5"/>
-                <CheckBox x:Name="CzujnikiCheckBox" Content="Czujniki Parkowania" Margin="0,5"/>
+                <StackPanel Orientation="Vertical" Margin="5">
+                    <TextBlock Text="IILOŚĆ OSÓB:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBox x:Name="IloscOsobTextBox" Style="{DynamicResource TextBox}" />
+                </StackPanel>
 
+                <!-- Pola wyboru -->
+                <CheckBox x:Name="KlimatyzacjaCheckBox" Content=" KLIMATYZACJA" Style="{DynamicResource CheckBox}"/>
+                <CheckBox x:Name="NawigacjaCheckBox" Content=" NAWIGACJA" Style="{DynamicResource CheckBox}"/>
+                <CheckBox x:Name="CzujnikiCheckBox" Content=" CZUJNIKI PARKOWANIA" Style="{DynamicResource CheckBox}"/>
+
+                <!-- Przycisk dodawania samochodu -->
+                <Button Content="DODAJ" Click="DodajSamochod_Click" Style="{DynamicResource PrimaryButtonStyle}" Margin="0,0,0,10" HorizontalAlignment="Center" />
+                
                 <!-- Nagłówki kolumn listy samochodów -->
-                <StackPanel Orientation="Horizontal" Margin="0,10" Background="LightGray" Width="800" HorizontalAlignment="Center" Height="30">
-                    <TextBlock Text="Marka" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Model" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Rok Produkcji" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Paliwo" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Ilość Osób" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Typ" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Klimatyzacja" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Nawigacja" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
-                    <TextBlock Text="Czy Dostępny" Width="100" FontWeight="Bold" Margin="0,0,0,0" TextAlignment="Left" VerticalAlignment="Center" Padding="10,0,0,0" />
+                <StackPanel Orientation="Horizontal" Margin="0,10" Background="#FF4D6C73" Width="800" HorizontalAlignment="Center" Height="30">
+                    <TextBlock Text="MARKA" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="MODEL" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="ROK PRODUKCJI" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="PALIWO" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="ILOŚĆ OSÓB" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="TYP" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="KLIMATYZACJA" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="NAWIGACJA" Style="{DynamicResource TextBlock}" />
+                    <TextBlock Text="CZY DOSTĘPNY" Style="{DynamicResource TextBlock}" />
                 </StackPanel>
 
                 <!-- ListBox z samochodami -->
@@ -72,7 +184,7 @@
                          Width="800" Height="200"
                          ScrollViewer.VerticalScrollBarVisibility="Visible"
                          ScrollViewer.HorizontalScrollBarVisibility="Disabled"
-                         HorizontalAlignment="Center">
+                         HorizontalAlignment="Center" Background="#FFF2EBDC" BorderBrush="{x:Null}" Foreground="#FF012E40">
                     <ListBox.ItemTemplate>
                         <DataTemplate>
                             <Grid>
@@ -101,21 +213,15 @@
                         </DataTemplate>
                     </ListBox.ItemTemplate>
                 </ListBox>
-
-                <!-- Przycisk dodawania samochodu -->
-                <Button Content="Dodaj Samochód" Click="DodajSamochod_Click" Margin="0,10" HorizontalAlignment="Center" />
             </StackPanel>
-            <StackPanel Orientation="Vertical" Margin="10" VerticalAlignment="Bottom" HorizontalAlignment="Center">
-                <TextBlock Text="Wybierz samochód do usunięcia:" FontWeight="Bold" FontSize="14" />
-                <ComboBox x:Name="SamochodyComboBox"
-                          DisplayMemberPath="Marka"
-                          SelectedValuePath="Id"
-                          Width="300" />
-                <Button Content="Usuń Wybrany Samochód"
+
+            <!-- Elementy usunięcia samochodu -->
+            <StackPanel Orientation="Vertical" HorizontalAlignment="Center" Grid.Row="2">
+                <TextBlock Text="Wybierz samochód do usunięcia:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Height="20" HorizontalAlignment="Center" Margin="0,0,0,5" />
+                <ComboBox x:Name="SamochodyComboBox" Style="{DynamicResource ComboBox}" />
+                <Button Content="USUŃ"
                         Click="UsunSamochod_Click"
-                        Margin="0,10"
-                        Width="200"
-                        HorizontalAlignment="Center" />
+                        Style="{DynamicResource PrimaryButtonStyle}" Margin="0,10,0,20" HorizontalAlignment="Center" />
             </StackPanel>
         </Grid>
     </ScrollViewer>

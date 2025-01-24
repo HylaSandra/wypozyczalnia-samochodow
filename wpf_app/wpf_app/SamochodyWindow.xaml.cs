@@ -19,13 +19,13 @@ namespace wpf_app
         {
             try
             {
-                // Pobierz samochody z API
+                // Pobieranie samochodów z API
                 var samochody = await _apiClient.GetSamochodyAsync();
 
-                // Przypisz dane do ListBox
+                // Przypisywanie danych do ListBox
                 SamochodyListBox.ItemsSource = samochody;
 
-                // Przypisz dane do ComboBox
+                // Przypisywanie danych do ComboBox
                 SamochodyComboBox.ItemsSource = samochody;
             }
             catch (Exception ex)
@@ -34,7 +34,7 @@ namespace wpf_app
             }
         }
 
-
+        // Dodawanie nowego samochodu
         private async void DodajSamochod_Click(object sender, RoutedEventArgs e)
         {
             try
@@ -65,16 +65,14 @@ namespace wpf_app
             }
         }
 
-
-
-
+        // Usuwanie samochodu
         private async void UsunSamochod_Click(object sender, RoutedEventArgs e)
         {
             try
             {
                 if (SamochodyComboBox.Items.Count == 0)
                 {
-                    MessageBox.Show("Nie ma samochodów do usunięcia.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
+                    MessageBox.Show("Nie wybrano samochodu do usunięcia.", "Błąd", MessageBoxButton.OK, MessageBoxImage.Warning);
                     return;
                 }
 
@@ -110,7 +108,11 @@ namespace wpf_app
             }
         }
 
-
+        // Zamykanie okna
+        private void ZamknijOkno_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
 
     }
 }

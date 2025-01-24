@@ -69,7 +69,10 @@ namespace wpf_app
                 MessageBox.Show($"Błąd podczas dodawania wypożyczenia: {ex.Message}");
             }
         }
-
+        private void ZamknijOkno_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close(); // Zamyka okno
+        }
 
         private async void UsunButton_Click(object sender, RoutedEventArgs e)
         {

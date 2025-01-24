@@ -4306,19 +4306,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\admin\\.nuget\\packages\\": {}
+    "C:\\Users\\zgrywek\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\wypozyczalnia_backend.csproj",
+      "projectUniqueName": "C:\\Users\\zgrywek\\Source\\Repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\wypozyczalnia_backend.csproj",
       "projectName": "wypozyczalnia_backend",
-      "projectPath": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\wypozyczalnia_backend.csproj",
-      "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-      "outputPath": "D:\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\obj\\",
+      "projectPath": "C:\\Users\\zgrywek\\Source\\Repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\wypozyczalnia_backend.csproj",
+      "packagesPath": "C:\\Users\\zgrywek\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\zgrywek\\Source\\Repos\\wypozyczalnia\\backend\\wypozyczalnia_backend\\wypozyczalnia_backend\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\zgrywek\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4343,7 +4348,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -4407,7 +4413,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.405/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

@@ -34,23 +34,29 @@ public partial class MainWindow : Window
 
     private void SamochodyButton_Click(object sender, RoutedEventArgs e)
     {
-        // Otwórz okno Samochody
+        // Otwieranie okna Samochody
         SamochodyWindow samochodyWindow = new SamochodyWindow();
         samochodyWindow.Show();
     }
 
     private void WypozyczeniaButton_Click(object sender, RoutedEventArgs e)
     {
-        // Otwórz okno Wypożyczenia
+        // Otwieranie okna Wypożyczenia
         WypozyczeniaWindow wypozyczeniaWindow = new WypozyczeniaWindow();
         wypozyczeniaWindow.Show();
     }
 
     private void KlienciButton_Click(object sender, RoutedEventArgs e)
     {
-        // Otwórz okno Klienci
+        // Otwieranie okna Klienci
         KlienciWindow klienciWindow = new KlienciWindow();
         klienciWindow.Show();
+    }
+
+    // Zamykanie okna
+    private void ZamknijOkno_Click(object sender, RoutedEventArgs e)
+    {
+        this.Close(); 
     }
 
 }

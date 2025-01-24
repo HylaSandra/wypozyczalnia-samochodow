@@ -2,60 +2,140 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:controls="clr-namespace:wpf_app.Controls"
-        Title="Zarządzanie Wypożyczeniami" Height="600" Width="800">
-    <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="2*" />
-            <ColumnDefinition Width="3*" />
-        </Grid.ColumnDefinitions>
+        Title="Zarządzanie wypożyczeniami" Height="650" Width="900"
+        WindowStyle="None"
+        WindowStartupLocation="CenterScreen"
+        AllowsTransparency="True">
 
-        <!-- Left Panel -->
-        <StackPanel Grid.Column="0" Margin="10">
-            <Label Content="ID Klienta:" />
-            <TextBox Name="IdKlientaTextBox" />
+    <Window.Resources>
+        <SolidColorBrush x:Key="PrimaryColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="SecondaryColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="PrimaryLightColor" Color="#F2EBDC"/>
+        <SolidColorBrush x:Key="SecondaryDarkColor" Color="#012E40"/>
 
-            <Label Content="ID Samochodu:" />
-            <TextBox Name="IdSamochoduTextBox" />
+        <SolidColorBrush x:Key="ButtonMouseOverColor" Color="#4D6C73"/>
+        <SolidColorBrush x:Key="TextMouseOverColor" Color="#D9D2C5"/>
+        <SolidColorBrush x:Key="ButtonPressedColor" Color="#012E40"/>
 
-            <Label Content="Data i Czas Od:" />
-            <controls:DateTimePicker x:Name="DataOdDateTimePicker" />
+        <!-- Styl bloków tekstowych -->
+        <Style x:Key="TextBox" TargetType="{x:Type TextBox}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryLightColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryDarkColor}"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="16"/>
+        </Style>
 
-            <Label Content="Data i Czas Do:" />
-            <controls:DateTimePicker x:Name="DataDoDateTimePicker" />
+        <!-- Styl bprzycisków -->
+        <Style x:Key="PrimaryButtonStyle" TargetType="{x:Type Button}">
+            <Setter Property="Background" Value="{DynamicResource PrimaryColor}"/>
+            <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="BorderThickness" Value="2.7,2.7,2.7,2.7"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+            <Setter Property="Height" Value="40"/>
+            <Setter Property="Width" Value="100"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="FontFamily" Value="Cascadia Code"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type Button}">
+                        <Border x:Name="btnBorder"
+                        Background="{TemplateBinding Background}"
+                        Width="{TemplateBinding Width}"
+                        MaxHeight="{TemplateBinding MaxHeight}"
+                        BorderThickness="{TemplateBinding BorderThickness}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        SnapsToDevicePixels="True"
+                        Padding="{TemplateBinding Padding}">
+                            <ContentPresenter x:Name="ContentPresenter" Focusable="False"
+                                      HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
+                                      VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
+                                      Margin="{TemplateBinding Padding}"
+                                      SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}"
+                                      RecognizesAccessKey="True"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonMouseOverColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource TextMouseOverColor}"/>
+                                <Setter Property="BorderThickness" Value="0"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="btnBorder" Property="Background" Value="{DynamicResource ButtonPressedColor}"/>
+                                <Setter Property="Foreground" Value="{DynamicResource SecondaryColor}"/>
+                                <Setter Property="BorderThickness" Value="2,2,2,2"/>
+                                <Setter Property="BorderBrush" Value="{DynamicResource SecondaryColor}"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid Background="#FFD9D2C5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="3*" />
+            </Grid.ColumnDefinitions>
 
-            <Label Content="Ilość:" />
-            <TextBox Name="IloscTextBox" />
+            <!-- Lewy panel -->
+            <StackPanel Grid.Column="0" Margin="10">
 
-            <Label Content="Typ Ilości:" />
-            <TextBox Name="TypIlosciTextBox" />
+                <!-- Przycisk do zamykania okna -->
+                <Button Content="X" Click="ZamknijOkno_Click" Style="{DynamicResource PrimaryButtonStyle}" HorizontalAlignment="Right" VerticalAlignment="Top" Width="40" Height="30" Margin="0,5,5,0"/>
 
-            <Label Content="Stawka:" />
-            <TextBox Name="StawkaTextBox" />
+                <!-- Nagłówek -->
+                <TextBlock Text="WYPOŻYCZENIA" Foreground="#FF4D6C73" Margin="0,10,0,20" FontFamily="Cascadia Code" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center" />
 
-            <Label Content="Kwota:" />
-            <TextBox Name="KwotaTextBox" />
+            <!-- Formularz zarządzania wypożyczeniami -->
+                <Label Content="ID KLIENTA:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" />
+            <TextBox Name="IdKlientaTextBox" Style="{DynamicResource TextBox}" />
 
-            <StackPanel Orientation="Horizontal" Margin="0,10,0,0">
-                <Button Name="DodajButton" Content="Dodaj" Width="80" Margin="5" Click="DodajButton_Click" />
-                <Button Name="UsunButton" Content="Usuń" Width="80" Margin="5" Click="UsunButton_Click" />
+                <Label Content="ID SAMOCHODU:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20" Width="341" />
+            <TextBox Name="IdSamochoduTextBox" Style="{DynamicResource TextBox}" />
+
+                <Label Content="DATA I CZAS OD:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20" />
+                <controls:DateTimePicker x:Name="DataOdDateTimePicker" Foreground="#FF4D6C73" FontSize="14" FontFamily="Cascadia Code"  />
+
+                <Label Content="DATA I CZAS DO:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20" />
+                <controls:DateTimePicker x:Name="DataDoDateTimePicker" Margin="0,0,0,5" FontSize="14" FontFamily="Cascadia Code" />
+
+                <Label Content="ILOŚĆ:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20" />
+            <TextBox Name="IloscTextBox" Style="{DynamicResource TextBox}"/>
+
+                <Label Content="TYP ILOŚCI:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20" />
+            <TextBox Name="TypIlosciTextBox" Style="{DynamicResource TextBox}" />
+
+                <Label Content="STAWKA:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20"/>
+            <TextBox Name="StawkaTextBox" Style="{DynamicResource TextBox}"/>
+
+                <Label Content="KWOTA:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,5,0,5" Height="20"/>
+            <TextBox Name="KwotaTextBox" Style="{DynamicResource TextBox}" />
+
+                <!-- Przyciski akcji -->
+                <StackPanel Orientation="Horizontal" Margin="0,20,0,0" HorizontalAlignment="Center">
+                    <Button Name="DodajButton" Content="DODAJ" Click="DodajButton_Click" Style="{DynamicResource PrimaryButtonStyle}" Margin="0,0,10,0"/>
+                    <Button Name="UsunButton" Content="USUŃ" Click="UsunButton_Click" Style="{DynamicResource PrimaryButtonStyle}" Margin="0,0,10,0" />
+                </StackPanel>
             </StackPanel>
-        </StackPanel>
-
-        <!-- Right Panel -->
-        <ListView Name="WypozyczeniaListView" Grid.Column="1" Margin="10">
-            <ListView.View>
-                <GridView>
-                    <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="50" />
-                    <GridViewColumn Header="ID Klienta" DisplayMemberBinding="{Binding IdKlient}" Width="80" />
-                    <GridViewColumn Header="ID Samochodu" DisplayMemberBinding="{Binding IdSamochod}" Width="100" />
-                    <GridViewColumn Header="Data Od" DisplayMemberBinding="{Binding DataOd}" Width="150" />
-                    <GridViewColumn Header="Data Do" DisplayMemberBinding="{Binding DataDo}" Width="150" />
-                    <GridViewColumn Header="Ilość" DisplayMemberBinding="{Binding Ilosc}" Width="50" />
-                    <GridViewColumn Header="Typ Ilości" DisplayMemberBinding="{Binding TypIlosci}" Width="80" />
-                    <GridViewColumn Header="Stawka" DisplayMemberBinding="{Binding Stawka}" Width="100" />
-                    <GridViewColumn Header="Kwota" DisplayMemberBinding="{Binding Kwota}" Width="100" />
-                </GridView>
-            </ListView.View>
-        </ListView>
-    </Grid>
+        
+            <!-- Prawy panel -->
+            <ListView Name="WypozyczeniaListView" Grid.Column="1" Margin="10">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="ID" DisplayMemberBinding="{Binding Id}" Width="50" />
+                        <GridViewColumn Header="ID Klienta" DisplayMemberBinding="{Binding IdKlient}" Width="80" />
+                        <GridViewColumn Header="ID Samochodu" DisplayMemberBinding="{Binding IdSamochod}" Width="100" />
+                        <GridViewColumn Header="Data Od" DisplayMemberBinding="{Binding DataOd}" Width="150" />
+                        <GridViewColumn Header="Data Do" DisplayMemberBinding="{Binding DataDo}" Width="150" />
+                        <GridViewColumn Header="Ilość" DisplayMemberBinding="{Binding Ilosc}" Width="50" />
+                        <GridViewColumn Header="Typ Ilości" DisplayMemberBinding="{Binding TypIlosci}" Width="80" />
+                        <GridViewColumn Header="Stawka" DisplayMemberBinding="{Binding Stawka}" Width="100" />
+                        <GridViewColumn Header="Kwota" DisplayMemberBinding="{Binding Kwota}" Width="100" />
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Grid>
 </Window>

@@ -4,15 +4,15 @@
 winexe
 C#
 .cs
-D:\wypozyczalnia\wpf_app\wpf_app\obj\Debug\net8.0-windows\
+C:\Users\zgrywek\Source\Repos\wypozyczalnia\wpf_app\wpf_app\obj\Debug\net8.0-windows\
 wpf_app
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\wypozyczalnia\wpf_app\wpf_app\App.xaml
+C:\Users\zgrywek\Source\Repos\wypozyczalnia\wpf_app\wpf_app\App.xaml
 5-1191930100
 
-13967481501
+12241916520
 198-352714763
 Controls\DateTimePicker.xaml;KlienciWindow.xaml;MainWindow.xaml;SamochodyWindow.xaml;WypozyczeniaWindow.xaml;
 
