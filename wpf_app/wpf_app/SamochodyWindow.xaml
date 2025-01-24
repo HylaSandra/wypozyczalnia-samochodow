@@ -2,7 +2,7 @@
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:global="clr-namespace:"
-        Title="Zarządzanie Samochodami" Height="1000" Width="900"
+        Title="Zarządzanie Samochodami" Height="600" Width="900"
         WindowStyle="None"
         WindowStartupLocation="CenterScreen"
         AllowsTransparency="True">
@@ -154,7 +154,7 @@
                 </StackPanel>
 
                 <StackPanel Orientation="Vertical" Margin="5">
-                    <TextBlock Text="IILOŚĆ OSÓB:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
+                    <TextBlock Text="ILOŚĆ OSÓB:" Foreground="#FF4D6C73" FontFamily="Cascadia Code" FontSize="16" Padding="0,0,0,5" Margin="0,0,0,5" Height="20" Width="870"/>
                     <TextBox x:Name="IloscOsobTextBox" Style="{DynamicResource TextBox}" />
                 </StackPanel>
 
