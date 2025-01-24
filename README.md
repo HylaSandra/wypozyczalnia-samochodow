@@ -48,9 +48,9 @@ Komunikacja z API odbywa się za pomocą `ApiClient.cs`, która wysyła zapytani
 W aplikacji zastosowano specialne style zmieniające wygląd przycisków w zależności od interakcji użytkownika (najazd myszki, kliknięcie) z użyciem `Trigger` i `ControlTemplate`.
 
 W każdym z okien znajduje się pogląd rekordów z bazy danych na żywo:
-- ![Samochody](master/images/db-samochody.png)
-- ![Klienci](master/images/db-klienci.png)
-- ![Wypozyczenia](master/images/db-wypozyczenia.png)
+- ![Samochody](images/db-samochody.png)
+- ![Klienci](images/db-klienci.png)
+- ![Wypozyczenia](images/db-wypozyczenia.png)
 
 
 ## Instalacja i uruchamianie
