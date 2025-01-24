@@ -1,25 +1,25 @@
-# Wypo¿yczalnia samochodów
+# WypoÅ¼yczalnia samochodÃ³w
 
-Aplikacja wypo¿yczalni samochodów to program umo¿liwiaj¹cy zarz¹dzanie flot¹ pojazdów, klientami oraz procesem wypo¿yczeñ. Aplikacja sk³ada siê z interfejsu u¿ytkownika wykonanego z u¿yciem silnika **WPF** oraz backendu opartego na **ASP.NET Core** z pod³¹czeniem do bazy danych **SQL Server**.
+Aplikacja wypoÅ¼yczalni samochodÃ³w to program umoÅ¼liwiajÄ…cy zarzÄ…dzanie flotÄ… pojazdÃ³w, klientami oraz procesem wypoÅ¼yczeÅ„. Aplikacja skÅ‚ada siÄ™ z interfejsu uÅ¼ytkownika wykonanego z uÅ¼yciem silnika **WPF** oraz backendu opartego na **ASP.NET Core** z podÅ‚Ä…czeniem do bazy danych **SQL Server**.
 
 
 **Autorzy**: Karolina Ciszowska, Daniel Jurczyk, Sandra Hyla
 
-## Funkcjonalnoœci
-### Zarz¹dzanie flot¹ samochodów:
-- dodawanie i usuwanie samochodów
+## FunkcjonalnoÅ›ci
+### ZarzÄ…dzanie flotÄ… samochodÃ³w:
+- dodawanie i usuwanie samochodÃ³w
 - przechowywanie danych (marka, model, paliwo, moc, rocznik, klimatyzacja, nawigacja)
-### Zarz¹dzanie klientami:
-- dodawanie, usuwanie i edytowanie klientów
-- przechowywanie danych (imiê, nazwisko, PESEL, NIP, telefon)
-### Obs³uga wypo¿yczeñ:
-- wybór samochodu i klienta
-- wybór daty i godziny wynajmu
-- wyliczanie kosztów wypo¿yczenia
-### Po³¹czenie z baz¹ danych SQL:
+### ZarzÄ…dzanie klientami:
+- dodawanie, usuwanie i edytowanie klientÃ³w
+- przechowywanie danych (imiÄ™, nazwisko, PESEL, NIP, telefon)
+### ObsÅ‚uga wypoÅ¼yczeÅ„:
+- wybÃ³r samochodu i klienta
+- wybÃ³r daty i godziny wynajmu
+- wyliczanie kosztÃ³w wypoÅ¼yczenia
+### PoÅ‚Ä…czenie z bazÄ… danych SQL:
 - przechowywanie danych w Entity Framework Core
-### Interfejs u¿ytkownika WPF:
-- aplikacja okienkowa z g³ównym oknem wyboru i osobnymi widokami klientów, samochodów i wypo¿yczeñ
+### Interfejs uÅ¼ytkownika WPF:
+- aplikacja okienkowa z gÅ‚Ã³wnym oknem wyboru i osobnymi widokami klientÃ³w, samochodÃ³w i wypoÅ¼yczeÅ„
 
 ## Technologie
 - **Frontend:** WPF (C#)
@@ -27,27 +27,27 @@ Aplikacja wypo¿yczalni samochodów to program umo¿liwiaj¹cy zarz¹dzanie flot¹ poj
 - **Baza danych:** SQL Server, Entity Framework
 - **System kontroli wersji:** GitHub
 ### Backend (ASP.NET Core):
-Aplikacja backendowa diza³a jako REST API i udostêpnia kontrolery:
-- `SamochodController.cs` -> zarz¹dzenie samochodami (GET/api/Samochod)
-- `KlientController.cs` -> zarz¹dzanie klientami (GET/api/Klient)
-- `WypozyczenieController.cs` -> zarz¹dzanie wypo¿yczeniami (POST/api/Wypozyczenie)
-#### Obs³uga bazy danych:
-Wykorzystano Entity Framework Core, który mapuje modele na tabelê w bazie SQL Server.
+Aplikacja backendowa dizaÅ‚a jako REST API i udostÄ™pnia kontrolery:
+- `SamochodController.cs` -> zarzÄ…dzenie samochodami (GET/api/Samochod)
+- `KlientController.cs` -> zarzÄ…dzanie klientami (GET/api/Klient)
+- `WypozyczenieController.cs` -> zarzÄ…dzanie wypoÅ¼yczeniami (POST/api/Wypozyczenie)
+#### ObsÅ‚uga bazy danych:
+Wykorzystano Entity Framework Core, ktÃ³ry mapuje modele na tabelÄ™ w bazie SQL Server.
 
 ### Frontend (WPF)
-Interfejs u¿ytkownika zosta³ utworzony w technologii Windows Presentation Foundation (WPF).
-- `MainWindow.xaml` –> ekran g³ówny z nawigacj¹
-- `SamochodyWindow.xaml` –> lista samochodów, dodawanie i usuwanie
-- `KlienciWindow.xaml` –> lista klientów, dodawanie, usuwanie i edycja
-- `WypozyczeniaWindow.xaml` –> panel wypo¿yczeñ
-- `DateTimePicker.xaml.cs` –> niestandardowy komponent do wyboru daty i godziny
+Interfejs uÅ¼ytkownika zostaÅ‚ utworzony w technologii Windows Presentation Foundation (WPF).
+- `MainWindow.xaml` â€“> ekran gÅ‚Ã³wny z nawigacjÄ…
+- `SamochodyWindow.xaml` â€“> lista samochodÃ³w, dodawanie i usuwanie
+- `KlienciWindow.xaml` â€“> lista klientÃ³w, dodawanie, usuwanie i edycja
+- `WypozyczeniaWindow.xaml` â€“> panel wypoÅ¼yczeÅ„
+- `DateTimePicker.xaml.cs` â€“> niestandardowy komponent do wyboru daty i godziny
 - `BoolToYesNoConverter.cs` -> konwerter true/false na tak/nie
 
-Komunikacja z API odbywa siê za pomoc¹ `ApiClient.cs`, która wysy³a zapytania HTTP do backendu.
+Komunikacja z API odbywa siÄ™ za pomocÄ… `ApiClient.cs`, ktÃ³ra wysyÅ‚a zapytania HTTP do backendu.
 
-W aplikacji zastosowano specialne style zmieniaj¹ce wygl¹d przycisków w zale¿noœci od interakcji u¿ytkownika (najazd myszki, klikniêcie) z u¿yciem `Trigger` i `ControlTemplate`.
+W aplikacji zastosowano specialne style zmieniajÄ…ce wyglÄ…d przyciskÃ³w w zaleÅ¼noÅ›ci od interakcji uÅ¼ytkownika (najazd myszki, klikniÄ™cie) z uÅ¼yciem `Trigger` i `ControlTemplate`.
 
-W ka¿dym z okien znajduje siê pogl¹d rekordów z bazy danych na ¿ywo:
+W kaÅ¼dym z okien znajduje siÄ™ poglÄ…d rekordÃ³w z bazy danych na Å¼ywo:
 - ![Samochody](images/db-samochody.png)
 - ![Klienci](images/db-klienci.png)
 - ![Wypozyczenia](images/db-wypozyczenia.png)
@@ -55,37 +55,37 @@ W ka¿dym z okien znajduje siê pogl¹d rekordów z bazy danych na ¿ywo:
 
 ## Instalacja i uruchamianie
 ### Wymagania:
-- .NET 6.0 (lub wy¿sza wersja)
+- .NET 6.0 (lub wyÅ¼sza wersja)
 - SQL Server
-- Visual Studio 2022 (lub wy¿sza wersja) z odpowiednimi rozszerzeniami do obs³ugi WPF i ASP.NET Core
+- Visual Studio 2022 (lub wyÅ¼sza wersja) z odpowiednimi rozszerzeniami do obsÅ‚ugi WPF i ASP.NET Core
 ### Uruchamianie:
 1. Sklonowanie repozytorium.
-2. Stworzenie bazy danych SQL Server Managment Studio u¿ywaj¹s poleceñ z pliku `BazaDanych.sql`.
-3. Zmiana w pliku **appsettings.json** nazwy serwera na w³asny w `ConnectionStrings`.
+2. Stworzenie bazy danych SQL Server Managment Studio uÅ¼ywajÄ…s poleceÅ„ z pliku `BazaDanych.sql`.
+3. Zmiana w pliku **appsettings.json** nazwy serwera na wÅ‚asny w `ConnectionStrings`.
 4. Uruchomienie backendu: `wypozyczalnia_backend.sln`.
 5. Uruchomienie frontendu: `wpf_app.sln`.
 ### Korzystanie:
-- Po uruchomieniu aplikacji pojawi siê ekran g³ówny, z którego mo¿na przejœæ do innych sekcji (Samochody, Klienci, Wypo¿yczenia).
-- W sekcji Samochody usuniêcie samochodu znajduje siê poni¿ej wyœwietlanej listy samochodów. Nale¿y wybraæ samochód z listy i klikn¹æ przycisk usuñ.
-- W poszczególnych oknach mo¿na przewijaæ za pomoc¹ rolki myszy.
-- Przycisk `X` s³u¿y do zamkniêcia danego okna.
+- Po uruchomieniu aplikacji pojawi siÄ™ ekran gÅ‚Ã³wny, z ktÃ³rego moÅ¼na przejÅ›Ä‡ do innych sekcji (Samochody, Klienci, WypoÅ¼yczenia).
+- W sekcji Samochody usuniÄ™cie samochodu znajduje siÄ™ poniÅ¼ej wyÅ›wietlanej listy samochodÃ³w. NaleÅ¼y wybraÄ‡ samochÃ³d z listy i kliknÄ…Ä‡ przycisk usuÅ„.
+- W poszczegÃ³lnych oknach moÅ¼na przewijaÄ‡ za pomocÄ… rolki myszy.
+- Przycisk `X` sÅ‚uÅ¼y do zamkniÄ™cia danego okna.
 
-## Elementy obiektowoœci
+## Elementy obiektowoÅ›ci
 ### Dziedziczenie:
-Klasy **Samochod**, **Klient**. **Wypozyczenie** dziedzicz¹ po **BaseModel**.
+Klasy **Samochod**, **Klient**. **Wypozyczenie** dziedziczÄ… po **BaseModel**.
 ### Hermetyzacja:
-Pola klas s¹ prywatne, dostêpne przez metody.
+Pola klas sÄ… prywatne, dostÄ™pne przez metody.
 ### Polimorfizm:
-Klasa **ApiClient** obs³uguje modele **Samochod**, **Klient**, **Wypozyczenie**.
+Klasa **ApiClient** obsÅ‚uguje modele **Samochod**, **Klient**, **Wypozyczenie**.
 ### Interfejsy:
-Obs³uga konwersji **BoolToYesNoConverter.cs**.
+ObsÅ‚uga konwersji **BoolToYesNoConverter.cs**.
 ## Diagram klas
 
 ### Opis klas:
 
 - **Klient**
     - `Id`: Unikalny identyfikator klienta.
-    - `Imie`: Imiê klienta.
+    - `Imie`: ImiÄ™ klienta.
     - `Nazwisko`: Nazwisko klienta.
     - `PESEL`: Numer PESEL klienta.
     - `NrTelefonu`: Numer telefonu klienta.
@@ -98,20 +98,20 @@ Obs³uga konwersji **BoolToYesNoConverter.cs**.
     - `Paliwo`: Typ paliwa samochodu.
 
 - **Wypozyczenie**
-    - `Id`: Unikalny identyfikator wypo¿yczenia.
-    - `IdKlient`: Identyfikator klienta, który wypo¿yczy³ samochód.
-    - `IdSamochod`: Identyfikator samochodu, który zosta³ wypo¿yczony.
-    - `DataOd`: Data rozpoczêcia wypo¿yczenia.
-    - `DataDo`: Data zakoñczenia wypo¿yczenia.
+    - `Id`: Unikalny identyfikator wypoÅ¼yczenia.
+    - `IdKlient`: Identyfikator klienta, ktÃ³ry wypoÅ¼yczyÅ‚ samochÃ³d.
+    - `IdSamochod`: Identyfikator samochodu, ktÃ³ry zostaÅ‚ wypoÅ¼yczony.
+    - `DataOd`: Data rozpoczÄ™cia wypoÅ¼yczenia.
+    - `DataDo`: Data zakoÅ„czenia wypoÅ¼yczenia.
 
-Wszystkie powy¿sze klasy dziedzicz¹ po klasie `BaseModel`, która zawiera:
+Wszystkie powyÅ¼sze klasy dziedziczÄ… po klasie `BaseModel`, ktÃ³ra zawiera:
 - `Id`: Unikalny identyfikator obiektu.
 
 ## Dodatkowe informacje
 ### Logowanie:
-Próbowano zaimplementowaæ logowanie u¿ytkownika z loginem i has³em, ale zosta³o to porzucone w póŸniejszym etapie tworzenia aplikacji.
+PrÃ³bowano zaimplementowaÄ‡ logowanie uÅ¼ytkownika z loginem i hasÅ‚em, ale zostaÅ‚o to porzucone w pÃ³Åºniejszym etapie tworzenia aplikacji.
 ### Styl tabel:
-Próbowano w ca³oœci zmodyfikowaæ wszystkie kontrolki typu ComboBox, DateTimePicker, ale czynnoœæ by³a czasoch³onna i czêœæ zmian porzucono.
+PrÃ³bowano w caÅ‚oÅ›ci zmodyfikowaÄ‡ wszystkie kontrolki typu ComboBox, DateTimePicker, ale czynnoÅ›Ä‡ byÅ‚a czasochÅ‚onna i czÄ™Å›Ä‡ zmian porzucono.
 
 
 
